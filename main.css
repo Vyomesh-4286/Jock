@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .animation0 {
+        @apply rotate-45 translate-x-2 translate-y-2 duration-500 ease-in-out !important;
+    }
+
+    .animation2 {
+        @apply -rotate-45 translate-x-2 -translate-y-2 duration-500 ease-in-out !important;
+    }
+}
+
+;
+
+@layer components {
+
+    .sectionHeroWithSwiperImg .swiper-button-next::after,
+    .sectionHeroWithSwiperImg .swiper-button-prev::after,
+    .swiper .swiper-button-next::after,
+    .swiper .swiper-button-prev::after {
+        content: '' !important;
+    }
+
+    .sectionHeroWithSwiperImg .swiper-button-next,
+    .sectionHeroWithSwiperImg .swiper-button-prev {
+        @apply relative !important;
+    }
+
+    .swiper .swiper-button-next,
+    .swiper .swiper-button-prev {
+        @apply absolute top-auto left-auto md:bottom-0 bottom-1 right-0 w-5 h-5 !important;
+    }
+
+    .pagination.swiper-pagination-fraction {
+        @apply bottom-0 w-20 left-0 bg-[#EBECE2] !important;
+    }
+
+    .swiper-pagination .swiper-pagination-bullet {
+        @apply bg-white
+    }
+
+    .FooterWithAccordion.accordion .accordion-button:not(.collapsed) {
+        @apply bg-[#F5F5F1] !important;
+    }
+
+    .lity-container {
+        @apply max-w-screen-xl !important;
+    }
+    
+    .lity-active,
+    body.lity-active {
+        overflow: hidden;
+    }
+}
