@@ -3,16 +3,25 @@
 @tailwind utilities;
 
 @layer base {
-    .animation0 {
-        @apply rotate-45 translate-x-2 translate-y-2 duration-500 ease-in-out !important;
+
+    .toggler_1,
+    .toggler_2,
+    .toggler_3 {
+        @apply w-26px h-0 border-0.2 border-[#FFFEFE] my-2 bg-white text-center duration-1000 ease-in-out !important;
+    }
+
+    .animation1 {
+        @apply rotate-45 translate-y-9px duration-1000 ease-in-out !important;
+    }
+
+    .hide {
+        @apply opacity-0 !important;
     }
 
     .animation2 {
-        @apply -rotate-45 translate-x-2 -translate-y-2 duration-500 ease-in-out !important;
+        @apply -rotate-45 -translate-y-9px duration-1000 ease-in-out !important;
     }
-}
-
-;
+};
 
 @layer components {
 
@@ -30,11 +39,11 @@
 
     .swiper .swiper-button-next,
     .swiper .swiper-button-prev {
-        @apply absolute top-auto left-auto md:bottom-0 bottom-1 right-0 w-5 h-5 !important;
+        @apply absolute top-auto left-auto md:bottom-0 bottom-7 right-9.2% w-5 h-5 !important;
     }
 
     .pagination.swiper-pagination-fraction {
-        @apply bottom-0 w-20 left-0 bg-[#EBECE2] !important;
+        @apply md:bottom-0 bottom-7 w-20 left-0 bg-[#EBECE2] !important;
     }
 
     .swiper-pagination .swiper-pagination-bullet {
@@ -42,15 +51,19 @@
     }
 
     .FooterWithAccordion.accordion .accordion-button:not(.collapsed) {
-        @apply bg-[#F5F5F1] !important;
+        @apply bg-[#F5F5F1] text-black !important;
+    }
+
+    .FooterWithAccordion.accordion .accordion-button:not(.collapsed)::after {
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 01.708 0L8 10.293l5.646-5.647a.5.5 0 01.708.708l-6 6a.5.5 0 01-.708 0l-6-6a.5.5 0 010-.708z'/%3E%3C/svg%3E") !important;
     }
 
     .lity-container {
         @apply max-w-screen-xl !important;
     }
-    
+
     .lity-active,
     body.lity-active {
         overflow: hidden;
     }
-}
+};

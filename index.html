@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/minion-pro" rel="stylesheet">
+    <link rel="stylesheet" href="font/Gotham/stylesheet.css">
+    <link rel="stylesheet" href="font/Minion Pro/stylesheet.css">
+    <link rel="stylesheet" href="font/Metropolis/stylesheet.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -19,70 +20,62 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="output.css">
 
     <title>Jock Safari Lodge Logo</title>
 </head>
 
 <body>
-    <header class="Header w-full absolute top-0">
-        <div class="my-14">
-            <header class="grid lg:grid-cols-12 grid-cols-2">
-                <div
-                    class="lg:order-1 order-2 lg:col-span-2 col-span-1 flex lg:justify-start justify-end items-center lg:pr-0 sm:px-15 px-5">
+    <header class="Header w-full absolute top-0 z-10">
+        <div class="my-14 mx-16">
+            <header class="grid xl:grid-cols-4 grid-cols-2">
+                <div class="flex flex-wrap justify-start items-center">
                     <a href="#"><img class="cursor-pointer z-10 hover:opacity-60" src="image/Home Page/svg/Jock.svg"
                             alt=""></a>
                 </div>
-                <div class="hidden lg:col-span-9 lg:order-2 lg:flex items-center justify-end text-white">
-                    <ul class="flex gap-8 mr-11 font-Gotham uppercase">
-                        <a href="#">
-                            <li
-                                class="cursor-pointer after:block after:w-0 after:border-b after:duration-300 hover:after:w-full">
-                                <span class="px-2">Accommodation</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li
-                                class="cursor-pointer after:block after:w-0 after:border-b after:duration-300 hover:after:w-full">
-                                <span class="px-2">Conservation & Community</span>
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li
-                                class="cursor-pointer after:block after:w-0 after:border-b after:duration-300 hover:after:w-full">
-                                <span class="px-2">Experiences</span>
-                            </li>
-                        </a>
+                <div class="xl:col-span-3 flex flex-wrap items-center justify-end gap-8">
+                    <ul class="hidden xl:flex flex-wrap gap-8 text-whiteshade2-0">
+                        <li
+                            class="font-Gotham tracking-0.03 font-normal text-2xs uppercase cursor-pointer relative after:absolute after:block after:w-0 after:pt-10px after:border-b after:duration-300 hover:after:w-full">
+                            <a class="px-2" href="#">Accommodation</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 font-normal text-2xs uppercase cursor-pointer relative after:absolute after:block after:w-0 after:pt-10px after:border-b after:duration-300 hover:after:w-full">
+                            <a class="px-2" href="#">Conservation & Community</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 font-normal text-2xs uppercase cursor-pointer relative after:absolute after:block after:w-0 after:pt-10px after:border-b after:duration-300 hover:after:w-full">
+                            <a class="px-2" href="#">Experiences</a>
+                        </li>
                     </ul>
-                    <div class="flex items-center">
-                        <a href="#">
-                            <button
-                                class="border py-4 px-8 font-Gotham text-xs font-normal uppercase border-[#ffffff80] hover:bg-indigo-600 hover:border-indigo-600">Make
-                                A booking
-                            </button>
+                    <div class="hidden xl:flex flex-wrap items-center">
+                        <a class="border font-Gotham font-normal text-xs leading-3 uppercase text-center text-whiteshade2-0 hover:bg-greenshade-0 hover:border-greenshade-0 py-4 px-8"
+                            href="#">
+                            Make A booking
                         </a>
                     </div>
-                </div>
-                <div
-                    class="lg:order-2 order-1 col-span-1 flex lg:justify-center justify-start lg:px-0 sm:px-15 pl-5 items-center">
-                    <img class="cursor-pointer" src="image/Home Page/svg/Manu Icon.svg" alt="">
+                    <div class="manuicon flex flex-wrap lg:justify-center justify-end lg:px-0 sm:px-15 px-5 items-center">
+                        <div class="cursor-pointer">
+                            <div class="toggler_1"></div>
+                            <div class="toggler_2"></div>
+                            <div class="toggler_3"></div>
+                        </div>
+                    </div>
                 </div>
             </header>
         </div>
     </header>
     <main>
-        <div class="sectionHero">
+        <div class="sectionHero relative">
             <img class="w-full h-[904px] object-cover" src="image/Home Page/Tilney Manor exterior and public areas.jpg"
                 alt="">
             <div class="sectionHeroContent">
-                <div class="absolute left-1/2 -translate-x-1/2 top-1/2">
+                <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2">
                     <h1
-                        class="font-Minion text-[4.063rem] text-[#FFFEFE] max-w-[476px] leading-[4.625rem] text-center mb-6">
+                        class="font-Minion lg:text-xl7 md:text-xl5 text-xl4.5 text-whiteshade2-0 max-w-[476px] text-center mb-6">
                         Unearth the place
                         of legend</h1>
-                    <div class="flex justify-center">
+                    <div class="flex flex-wrap justify-center">
                         <a href="https://youtu.be/FcgcOKTGGpA" data-lity>
                             <button class="hover:opacity-60">
                                 <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -90,31 +83,33 @@
                         </a>
                     </div>
                 </div>
-                <div class="absolute -bottom-28 left-1/2 -translate-x-1/2">
-                    <ul class="flex text-white items-center gap-3 font-Minion font-normal leading-4">
-                        <li>UNTAMED</li>
+                <div class="absolute bottom-12 left-1/2 -translate-x-1/2">
+                    <ul class="flex flex-wrap text-white items-center gap-3">
+                        <li class="font-Minion text-2xs font-normal leading-4 tracking-0.18">UNTAMED</li>
                         <li><img src="image/Home Page/svg/Rectangle.svg" alt=""></li>
-                        <li>UNTOUCHED</li>
+                        <li class="font-Minion text-2xs font-normal leading-4 tracking-0.18">UNTOUCHED</li>
                         <li><img src="image/Home Page/svg/Rectangle.svg" alt=""></li>
-                        <li>UNFORGETTABLE</li>
+                        <li class="font-Minion text-2xs font-normal leading-4 tracking-0.18">UNFORGETTABLE</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="sectionHeroWithContent xl:px-36 lg:px-16 md:px-11 px-6 xl:py-48 lg:py-36 md:py-24 py-15">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
-                <div class="flex justify-center md:items-start items-center">
+                <div class="flex flex-wrap justify-center md:items-start items-center">
                     <div class="max-w-[631px]">
-                        <h1 class="font-Minion font-normal text-[2.813rem] leading-tight text-[#787F3D]">
+                        <h1
+                            class="md:text-left text-center font-Minion font-normal lg:text-xl4 md:text-4xl text-3xl leading-tight text-greenshade-0">
                             The Original
                             Private
                             Safari Lodge in Kruger National Park
                         </h1>
                     </div>
                 </div>
-                <div class="flex flex-col items-center lg:py-0 py-5">
+                <div class="flex flex-wrap flex-col items-center lg:py-0 py-5">
                     <div class="max-w-[484px]">
-                        <p class="font-Gotham font-light text-sm leading-5 text-[#494948]">
+                        <p
+                            class="md:text-left text-center font-Gotham font-light text-sm leading-21px text-grayshade-0">
                             As the legend goes, deep in the heart of the Kruger National Park lies a place so
                             spectacular
                             that
@@ -128,7 +123,8 @@
                             best friend.
                         </p>
                         <br />
-                        <p class="font-Gotham font-light text-sm leading-5 text-[#494948]">
+                        <p
+                            class="md:text-left text-center font-Gotham font-light text-sm leading-21px text-grayshade-0">
                             For your Big 5 safari adventure, choose between the private thatched suites on the riverbed
                             or
                             the
@@ -138,63 +134,75 @@
                             the
                             soundtrack of the nightlife.
                         </p>
-                        <div class="flex justify-start-start mt-11">
-                            <a href="#">
-                                <button
-                                    class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                        class="px-2">Explore accomodation</span>
-                                </button>
-                            </a>
+                        <div class="flex flex-wrap md:justify-start justify-center pt-11">
+                            <button
+                                class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0">
+                                <a class="px-2" href="#">Explore accomodation</a>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="sectionHeroWithImgGrid xl:px-16 lg:px-12 md:px-9 px-6 xl:pb-32 lg:pb-20 md:pb-14 pb-10">
+        <div class="sectionHeroWithImgGrid xl:px-16 lg:px-12 md:px-9 px-6 xl:pb-32 lg:pb-20 md:pb-14 pb-20">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
-                <div>
+                <div class="ImgGrid1">
                     <img class="w-full pb-11 object-cover" src="image/Home Page/Jock Main Lodge.jpg" alt="">
-                    <h1 class="font-Minion md:text-left text-center font-normal text-4xl text-[#494948] pb-3">Jock Main
+                    <h1
+                        class="font-Minion tracking-0.03 md:text-left text-center font-normal lg:text-4xl lg:leading-47px md:text-3xl text-xl3 text-grayshade-0 pb-3">
+                        Jock
+                        Main
                         Lodge</h1>
-                    <p class="font-Gotham md:text-left text-center font-light text-sm leading-5 text-[#494948] pb-7">
-                        A secluded paradise overlooking serene riverbeds, Jock Main Lodge has 12 thatched suites
-                        offering privacy and uninterrupted views.
-                    </p>
-                    <div class="flex md:justify-start justify-center">
-                        <button
-                            class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                class="px-2">Explore</span>
-                        </button>
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <p
+                            class="max-w-[484px] font-Gotham md:text-left text-center font-light text-sm leading-21px subpixel-antialiased text-grayshade-0 pb-7">
+                            A secluded paradise overlooking serene riverbeds, Jock Main Lodge has 12 thatched suites
+                            offering privacy and uninterrupted views.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                            href="#"><span class="px-2">Explore</span>
+                        </a>
                     </div>
                 </div>
-                <div>
+                <div class="ImgGrid2">
                     <img class="w-full pb-11 object-cover" src="image/Home Page/Fitzpatrick's Lodge.jpg" alt="">
-                    <h1 class="font-Minion md:text-left text-center font-normal text-4xl text-[#494948] pb-3">
+                    <h1
+                        class="font-Minion tracking-0.03 md:text-left text-center font-normal lg:text-4xl lg:leading-47px md:text-3xl text-xl3 text-grayshade-0 pb-3">
                         Fitzpatrick’s Lodge</h1>
-                    <p class="font-Gotham md:text-left text-center font-light text-sm leading-5 text-[#494948] pb-7">
-                        The Fitzpatrick’s Lodge is stylishly appointed to offer the ultimate private villa experience
-                        and can accommodate up to six adults.
-                    </p>
-                    <div class="flex md:justify-start justify-center">
-                        <button
-                            class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                class="px-2">Explore</span>
-                        </button>
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <p
+                            class="max-w-[484px] font-Gotham md:text-left text-center font-light text-sm leading-21px subpixel-antialiased text-grayshade-0 pb-7">
+                            The Fitzpatrick’s Lodge is stylishly appointed to offer the ultimate private villa
+                            experience
+                            and can accommodate up to six adults.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                            href="#"><span class="px-2">Explore</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="sectionHeroWithSwiperVideo bg-[#EBECE2]">
+        <div class="sectionHeroWithSwiperVideo bg-whiteshade-0">
             <div class="xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-11 px-6">
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-2 items-center">
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
                     <div>
                         <img class="w-full object-cover" src="image/Home Page/Where Two Rivers Meet.jpg" alt="">
                     </div>
-                    <div class="flex justify-center md:py-0 py-3">
+                    <div class="flex flex-wrap justify-center md:py-0 py-3">
                         <div class="max-w-[410px] md:text-left text-center">
-                            <p class="font-Gotham text-xs font-light text-[#787F3D] mb-10">Location</p>
-                            <h1 class="font-Minion text-4xl font-normal text-[#494948] mb-8">Where Two Rivers Meet</h1>
-                            <p class="font-Gotham text-sm font-normal text-[#494948] mb-10">As the very first private
+                            <p class="font-Gotham text-xs leading-3 font-light text-greenshade-0 mb-10">Location</p>
+                            <h1
+                                class="font-Minion tracking-0.03 lg:text-4xl lg:leading-42px md:text-3xl text-xl3 font-normal text-grayshade-0 mb-8">
+                                Where Two Rivers Meet
+                            </h1>
+                            <p
+                                class="font-Gotham text-sm leading-21px subpixel-antialiased font-light text-grayshade-0 mb-10">
+                                As the very first private
                                 concession granted within Kruger National Park, Jock Safari Lodge
                                 is the original safari legend. Located in Kruger's southern region, where the Mitomeni
                                 and Biyamiti rivers meet to become one, it will feel like you're stepping back to South
@@ -203,11 +211,10 @@
                                 This and the history behind it are what make Jock Safari Lodge shine. We invite you to a
                                 Big 5 safari that's more authentic, immersive, and impactful than any other.
                             </p>
-                            <div class="flex md:justify-start justify-center">
-                                <button
-                                    class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                        class="px-2">Explore Our Location</span>
-                                </button>
+                            <div class="flex flex-wrap md:justify-start justify-center">
+                                <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                                    href="#"><span class="px-2">Explore Our Location</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -218,7 +225,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 1.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/C3n2uTOCgH8" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -226,13 +233,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 2.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/XE_Wye7oy8s" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -240,13 +247,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 1.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/C3n2uTOCgH8" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -254,13 +261,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 2.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/XE_Wye7oy8s" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -268,13 +275,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 1.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/C3n2uTOCgH8" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -282,13 +289,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 2.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/XE_Wye7oy8s" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -296,13 +303,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 1.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/C3n2uTOCgH8" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -310,13 +317,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 2.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/XE_Wye7oy8s" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -324,13 +331,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 1.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/C3n2uTOCgH8" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -338,13 +345,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 2.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/XE_Wye7oy8s" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -352,13 +359,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 1.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/C3n2uTOCgH8" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -366,13 +373,13 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                         <div class="swiper-slide">
                             <img class="w-full h-[612px] object-cover" src="image/Home Page/Jock Swiper - 2.jpg" alt="">
-                            <div class="flex left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
+                            <div class="flex flex-wrap left-1/2 absolute top-1/2 -translate-y-1/2 justify-center">
                                 <a href="https://youtu.be/XE_Wye7oy8s" data-lity>
                                     <button class="hover:opacity-60">
                                         <img src="image/Home Page/svg/Play Button.svg" alt="">
@@ -380,36 +387,41 @@
                                 </a>
                             </div>
                             <p
-                                class="md:ml-28 flex md:justify-start justify-center md:pb-0 pt-9 pb-10 font-Gotham text-base font-normal text-[#787F3D]">
+                                class="md:ml-28 flex flex-wrap md:justify-start justify-center md:pb-0 pt-9 pb-20 font-Gotham text-base leading-7 font-normal text-greenshade-0">
                                 Description of video
                                 and image ipsum dolor sit amet</p>
                         </div>
                     </div>
-                    <div class="swiper-button-next mr-16 md:mr-20 lg:mr-24 xl:mr-28 2xl:mr-36 z-10 bg-[#EBECE2]">
+                    <div class="swiper-button-next z-20 bg-whiteshade-0">
                         <img src="image/Home Page/svg/Arrow - Right.svg" alt="">
                     </div>
-                    <div class="swiper-button-prev mr-24 md:mr-28 lg:mr-32 xl:mr-36 2xl:mr-44 z-10 bg-[#EBECE2]">
+                    <div class="swiper-button-prev mr-47px z-20 bg-whiteshade-0">
                         <img src="image/Home Page/svg/Arrow - Left.svg" alt="">
                     </div>
                     <div
-                        class="pagination mr-8 bg-[#EBECE2] flex font-Minion text-xl font-normal text-[#787F3D] absolute z-10">
+                        class="pagination mr-8 bg-whiteshade-0 flex flex-wrap font-Minion text-22px capitalize font-normal text-greenshade-0 absolute z-10">
                     </div>
                 </div>
             </div>
         </div>
         <div class="sectionHeroWithContentWithImg">
             <div class="xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-pl-11 px-6">
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-2 items-center">
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
                     <div class="order-2">
                         <img class="w-full object-cover" src="image/Home Page/Uninterrupted Adventure Awaits.jpg"
                             alt="">
                     </div>
-                    <div class="flex justify-center md:py-0 py-3">
+                    <div class="flex flex-wrap justify-center md:py-0 py-3">
                         <div class="max-w-[410px] md:text-left text-center">
-                            <p class="font-Gotham text-xs font-light text-[#787F3D] mb-10">Experiences</p>
-                            <h1 class="font-Minion text-4xl font-normal text-[#494948] mb-8">Uninterrupted Adventure
+                            <p class="font-Gotham text-xs leading-3 font-normal text-greenshade-0 mb-10">Experiences</p>
+                            <h1
+                                class="font-Minion tracking-0.03 lg:text-4xl lg:leading-42px md:text-3xl text-xl3 font-normal text-grayshade-0 mb-8">
+                                Uninterrupted Adventure
                                 Awaits</h1>
-                            <p class="font-Gotham text-sm font-normal text-[#494948] mb-10">When you come to Jock Safari
+                            <p
+                                class="font-Gotham text-sm leading-21px font-light subpixel-antialiased text-grayshade-0 mb-10">
+                                When you come to Jock
+                                Safari
                                 Lodge, you're really coming to see the wild spaces and wildlife surrounding our lodge.
                                 If you're hungry for exploration, for deeply immersing yourself and learning about the
                                 bush's delicate balance and fascinating stories, this is the place for you.
@@ -423,26 +435,31 @@
                                 day of golf in the bush, and our Pilgrim's Rest Retreat offers an escape to enjoy
                                 pampering in the bush.
                             </p>
-                            <div class="flex md:justify-start justify-center">
-                                <button
-                                    class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                        class="px-2">Explore Our Experiences</span>
-                                </button>
+                            <div class="flex flex-wrap md:justify-start justify-center">
+                                <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                                    href="#"><span class="px-2">Explore Our Experiences</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-pl-11 px-6">
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-2 items-center">
-                    <div>
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
+                    <div class="md:order-1 order-2">
                         <img class="w-full object-cover" src="image/Home Page/Safari with Heart.jpg" alt="">
                     </div>
-                    <div class="flex justify-center md:py-0 py-3">
+                    <div class="flex flex-wrap justify-center md:py-0 py-3 md:order-2 order-1">
                         <div class="max-w-[410px] md:text-left text-center">
-                            <p class="font-Gotham text-xs font-light text-[#787F3D] mb-10">Conservation & Community</p>
-                            <h1 class="font-Minion text-4xl font-normal text-[#494948] mb-8">Safari with Heart</h1>
-                            <p class="font-Gotham text-sm font-normal text-[#494948] mb-10">A safari is so much more
+                            <p class="font-Gotham tracking-0.03 text-xs leading-3 font-normal text-greenshade-0 mb-10">
+                                Conservation & Community
+                            </p>
+                            <h1
+                                class="font-Minion lg:text-4xl tracking-0.03 lg:leading-42px md:text-3xl text-xl3 font-normal text-grayshade-0 mb-8">
+                                Safari with Heart</h1>
+                            <p
+                                class="font-Gotham text-sm leading-21px font-light subpixel-antialiased text-grayshade-0 mb-10">
+                                A safari is so much more
                                 memorable when you know you've treaded lightly and helped preserve it. At Jock Safari
                                 Lodge, we believe in protecting our fascinating wildlife and landscapes by following
                                 only the most stringent eco-management criteria in South Africa. Our lodge was also
@@ -454,11 +471,10 @@
                                 in conservation programmes is a testimony to this. As our guest, you can learn more
                                 about what this means and how you can make a difference.
                             </p>
-                            <div class="flex md:justify-start justify-center">
-                                <button
-                                    class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                        class="px-2">Explore Conservation & community</span>
-                                </button>
+                            <div class="flex flex-wrap md:justify-start justify-center">
+                                <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                                    href="#"><span class="px-2">Explore Conservation & community</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -468,27 +484,27 @@
         <div class="sectionHeroWithSwiperImg">
             <div class="xl:py-40 lg:py-24 md:py-14 py-10 lg:pl-16 md:pl-13 sm:pl-10 pl-6">
                 <div class="grid lg:grid-cols-8 md:grid-cols-6 grid-cols-1 gap-4">
-                    <div class="md:col-span-2 col-span-1 flex items-center relative md:justify-start justify-center">
+                    <div
+                        class="md:col-span-2 col-span-1 flex flex-wrap items-center relative md:justify-start justify-center md:pr-0 pr-6">
                         <div class="md:max-w-[221px]">
-                            <h1 class="font-Minion text-[2.75rem] font-normal text-[#787F3D]">Always on safari with
+                            <h1 class="font-Minion lg:text-xl4 md:text-4xl text-3xl font-normal text-greenshade-0 ">
+                                Always on safari with
                                 #Jocksafari</h1>
-                            <p class="font-Gotham text-sm font-normal text-[#494948]">Lorem ipsum dolor sit amet,
+                            <p
+                                class="font-Gotham text-sm leading-21px subpixel-antialiased font-normal text-grayshade-0">
+                                Lorem ipsum dolor sit amet,
                                 consectetur adipiscing elit, sed do eiusmod.</p>
-                            <div class="swiper-control grid grid-cols-2 md:mt-15 my-6">
-                                <div>
-                                    <div class="swiper-button-prev relative instagram-swiper-prev md:mr-7">
-                                        <img src="image/Home Page/svg/Arrow - Left.svg" alt="">
-                                    </div>
+                            <div class="swiper-control h-5 flex flex-wrap md:mt-15 my-6">
+                                <div class="swiper-button-prev w-fit relative instagram-swiper-prev mr-47px">
+                                    <img src="image/Home Page/svg/Arrow - Left.svg" alt="">
                                 </div>
-                                <div class="flex md:justify-start justify-end">
-                                    <div class="swiper-button-next relative instagram-swiper-next">
-                                        <img src="image/Home Page/svg/Arrow - Right.svg" alt="">
-                                    </div>
+                                <div class="swiper-button-next w-fit relative instagram-swiper-next">
+                                    <img src="image/Home Page/svg/Arrow - Right.svg" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:col-span-6 md:col-span-4 col-span-1 flex">
+                    <div class="lg:col-span-6 md:col-span-4 col-span-1 flex flex-wrap">
                         <div class="swiper mySwiper_1 relative">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -521,92 +537,88 @@
                 </div>
             </div>
         </div>
-        <div class="sectionHeroWithContentGrid md:px-16 sm:px-11 px-6 xl:pb-60 lg:pb-44 md:pb-20 pb-10">
-            <h1 class="font-Minion text-[2.75rem] font-normal text-[#787F3D] text-center mb-2">Uncover our stories from
+        <div class="sectionHeroWithContentGrid md:px-16 sm:px-11 px-6 xl:pb-60 lg:pb-44 md:pb-20 pb-20">
+            <h1 class="font-Minion lg:text-xl4 md:text-4xl text-3xl font-normal text-greenshade-0 text-center mb-2">
+                Uncover our stories from
                 the
                 wilderness</h1>
-            <div class="flex justify-center">
-                <p class="font-Gotham text-sm font-light text-[#494948] text-center max-w-[620px] mb-7">Read all about
+            <div class="flex flex-wrap justify-center">
+                <p class="font-Gotham text-sm leading-21px font-light text-grayshade-0 text-center max-w-[620px] mb-7">
+                    Read all about
                     what’s
                     happening at our lodge to inspire your stay, feed your nostalgia, or simply leave
                     you daydreaming about Africa and her mysterious stories.</p>
             </div>
-            <div class="flex justify-center mb-14">
-                <button
-                    class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                        class="px-2">Explore all blogs</span>
-                </button>
+            <div class="flex flex-wrap justify-center mb-14">
+                <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                    href="#"><span class="px-2">Explore all blogs</span>
+                </a>
             </div>
             <div class="grid md:grid-cols-3 grid-cols-1 gap-9">
                 <div class="ContentGrid">
                     <img class="w-full h-[486px] object-cover" src="image/Home Page/Jock Grid - 1.jpg" alt="">
-                    <h1
-                        class="mt-11 font-Minion text-[1.75rem] font-normal text-[#494948] mb-4 md:text-start text-center">
+                    <h1 class="mt-11 font-Minion text-xl3 font-normal text-grayshade-0 mb-4 md:text-start text-center">
                         Giraffe
                     </h1>
-                    <div class="flex md:justify-start justify-center">
-                        <p class="font-Gotham text-sm font-normal text-[#494948] mb-9 max-w-[348px]">
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <p class="font-Gotham text-sm leading-21px font-normal text-grayshade-0 mb-9 max-w-[348px]">
                             Lorem ipsum dolor sit amet,
                             consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua.
                         </p>
                     </div>
-                    <div class="flex md:justify-start justify-center">
-                        <button
-                            class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                class="px-2">Explore</span>
-                        </button>
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                            href="#"><span class="px-2">Explore</span>
+                        </a>
                     </div>
                 </div>
                 <div class="ContentGrid">
                     <img class="w-full h-[486px] object-cover" src="image/Home Page/Jock Grid - 2.jpg" alt="">
-                    <h1
-                        class="mt-11 font-Minion text-[1.75rem] font-normal text-[#494948] mb-4 md:text-start text-center">
+                    <h1 class="mt-11 font-Minion text-xl3 font-normal text-grayshade-0 mb-4 md:text-start text-center">
                         Torburnlea Guest House
                     </h1>
-                    <div class="flex md:justify-start justify-center">
-                        <p class="font-Gotham text-sm font-normal text-[#494948] mb-9 max-w-[348px]">
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <p class="font-Gotham text-sm leading-21px font-normal text-grayshade-0 mb-9 max-w-[348px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.
                         </p>
                     </div>
-                    <div class="flex md:justify-start justify-center">
-                        <button
-                            class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                class="px-2">Explore</span>
-                        </button>
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                            href="#"><span class="px-2">Explore</span>
+                        </a>
                     </div>
                 </div>
                 <div class="ContentGrid">
                     <img class="w-full h-[486px] object-cover" src="image/Home Page/Jock Grid - 3.jpg" alt="">
-                    <h1
-                        class="mt-11 font-Minion text-[1.75rem] font-normal text-[#494948] mb-4 md:text-start text-center">
+                    <h1 class="mt-11 font-Minion text-xl3 font-normal text-grayshade-0 mb-4 md:text-start text-center">
                         Gracious! It’s a G-NU!
                     </h1>
-                    <div class="flex md:justify-start justify-center">
-                        <p class="font-Gotham text-sm font-normal text-[#494948] mb-9 max-w-[348px]">
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <p class="font-Gotham text-sm leading-21px font-normal text-grayshade-0 mb-9 max-w-[348px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua.
                         </p>
                     </div>
-                    <div class="flex md:justify-start justify-center">
-                        <button
-                            class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-3 after:block after:w-full after:border-b after:border-[#787F3D] after:duration-300 hover:after:w-0"><span
-                                class="px-2">Explore</span>
-                        </button>
+                    <div class="flex flex-wrap md:justify-start justify-center">
+                        <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                            href="#"><span class="px-2">Explore</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="bg-[#F5F5F1]">
-        <div class="FooterWithSwiper bg-[#787F3D] xl:pt-40 md:pt-24 py-11">
+    <footer class="bg-whiteshade1-0">
+        <div class="FooterWithSwiper bg-greenshade-0 xl:pt-40 md:pt-24 py-11 px-6">
             <div class="swiper mySwiper_2">
                 <div class="swiper-wrapper mb-20">
                     <div class="swiper-slide">
-                        <div class="flex justify-center">
+                        <div class="flex flex-wrap justify-center">
                             <div class="swiper-content">
-                                <p class="font-Minion text-2xl font-normal text-white max-w-[948px] mb-7 text-center">
+                                <p
+                                    class="font-Minion text-25px font-normal text-whiteshade2-0 max-w-[948px] mb-7 text-center">
                                     Our best experience of Kruger was at Jock's. You can feel the love for nature in the
                                     heart and soul of the wonderful owners. The rooms are practically in the wild. We
                                     saw
@@ -614,15 +626,17 @@
                                     you
                                     want), amazing food in the river bed. Will never forget this experience!
                                 </p>
-                                <p class="font-Gotham text-lg font-normal text-[#FFFEFE] text-center">-Jacob Yavin
+                                <p class="font-Gotham text-lg leading-60px font-normal text-whiteshade2-0 text-center">
+                                    -Jacob Yavin
                                     Vermeulen</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex justify-center">
+                        <div class="flex flex-wrap justify-center">
                             <div class="swiper-content">
-                                <p class="font-Minion text-2xl font-normal text-white max-w-[948px] mb-7 text-center">
+                                <p
+                                    class="font-Minion text-25px font-normal text-whiteshade2-0 max-w-[948px] mb-7 text-center">
                                     Our best experience of Kruger was at Jock's. You can feel the love for nature in the
                                     heart and soul of the wonderful owners. The rooms are practically in the wild. We
                                     saw
@@ -630,15 +644,17 @@
                                     you
                                     want), amazing food in the river bed. Will never forget this experience!
                                 </p>
-                                <p class="font-Gotham text-lg font-normal text-[#FFFEFE] text-center">-Jacob Yavin
+                                <p class="font-Gotham text-lg leading-60px font-normal text-whiteshade2-0 text-center">
+                                    -Jacob Yavin
                                     Vermeulen</p>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="flex justify-center">
+                        <div class="flex flex-wrap justify-center">
                             <div class="swiper-content">
-                                <p class="font-Minion text-2xl font-normal text-white max-w-[948px] mb-7 text-center">
+                                <p
+                                    class="font-Minion text-25px font-normal text-whiteshade2-0 max-w-[948px] mb-7 text-center">
                                     Our best experience of Kruger was at Jock's. You can feel the love for nature in the
                                     heart and soul of the wonderful owners. The rooms are practically in the wild. We
                                     saw
@@ -646,7 +662,8 @@
                                     you
                                     want), amazing food in the river bed. Will never forget this experience!
                                 </p>
-                                <p class="font-Gotham text-lg font-normal text-[#FFFEFE] text-center">-Jacob Yavin
+                                <p class="font-Gotham text-lg leading-60px font-normal text-whiteshade2-0 text-center">
+                                    -Jacob Yavin
                                     Vermeulen</p>
                             </div>
                         </div>
@@ -655,19 +672,21 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div class="FooterWithAccordion accordion" id="accordionExample">
-            <div class="accordion-item bg-[#F5F5F1] w-full">
-                <h2 class="accordion-header mb-0 flex active:bg-[#F5F5F1] justify-center w-full" id="headingTwo">
+        <div class="FooterWithAccordion accordion border-b mb-24" id="accordionExample">
+            <div class="accordion-item bg-whiteshade1-0 w-full">
+                <h2 class="accordion-header mb-0 flex flex-wrap active:bg-whiteshade1-0 justify-center w-full"
+                    id="headingTwo">
                     <button
-                        class="accordion-button collapsed relative flex items-center justify-center text-center w-full py-4 px-5 text-gray-800 transition focus:outline-none font-Minion text-2xl font-normal after:ml-4"
+                        class="accordion-button collapsed relative flex flex-wrap items-center justify-center text-center w-full py-7 px-5 text-grayshade-0 transition focus:outline-none font-Minion tracking-0.03 text-26px font-normal after:ml-4"
                         type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                         aria-controls="collapseTwo">
                         <span>Sign up for our newsletter and promotions</span>
                     </button>
                 </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse flex justify-center"
+                <div id="collapseTwo" class="accordion-collapse collapse flex flex-wrap justify-center"
                     aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body py-4 px-5 max-w-[986px]">
+                    <div
+                        class="accordion-body font-Gotham text-sm text-grayshade-0 font-normal py-4 px-6 max-w-[986px]">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vitae esse veniam eveniet
                         repellat eius, illum temporibus, ipsum natus, inventore itaque animi? Sint provident fugiat,
                         sunt rem, quisquam consectetur, deserunt laudantium fuga ea enim eum ullam nostrum recusandae
@@ -678,85 +697,128 @@
                 </div>
             </div>
         </div>
-        <hr class="mb-24">
         <div class="FooterManu xl:pl-28 lg:pl-12 md:px-9 px-6 sm:pl-10 pl-6 pr-7">
             <div class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-1 xl:pb-36 lg:pb-32 md:pb-28 pb-24">
-                <div class="FooterLogoWithSocialIcon pb-3">
-                    <div class="flex lg:justify-start justify-center">
-                        <a href="#"></a><img class="hover:opacity-60" src="image/Home Page/svg/Jock - Footer.svg"
+                <div class="FooterLogoWithSocialIcon lg:pb-0 pb-6">
+                    <div class="flex flex-wrap lg:justify-start justify-center">
+                        <a href="#"></a><img class="hover:opacity-70" src="image/Home Page/svg/Jock - Footer.svg"
                             alt="">
                     </div>
-                    <div class="flex lg:justify-start justify-center pl-2 space-x-6 mt-5">
-                        <a href="https://www.instagram.com/jocksafari/?hl=en"><img class="hover:opacity-60"
-                                src="image/Home Page/svg/Instagram.svg" alt=""></a>
-                        <a href="https://www.facebook.com/JockSafariLodge/"><img class="hover:opacity-60"
-                                src="image/Home Page/svg/Facebook.svg" alt=""></a>
-                        <a href="https://www.youtube.com/user/JockSafariLodge"><img class="hover:opacity-60"
-                                src="image/Home Page/svg/Youtube.svg" alt=""></a>
-                        <a href=""><img class="hover:opacity-60" src="image/Home Page/svg/Tumblr.svg" alt=""></a>
+                    <div class="flex flex-wrap lg:justify-start justify-center items-center pl-2 space-x-6 mt-5">
+                        <a href="https://www.instagram.com/jocksafari/?hl=en" target="_blank"><img
+                                class="opacity-40 hover:opacity-70" src="image/Home Page/svg/Instagram.svg" alt=""></a>
+                        <a href="https://www.facebook.com/JockSafariLodge/" target="_blank"><img
+                                class="opacity-40 hover:opacity-70" src="image/Home Page/svg/Facebook.svg" alt=""></a>
+                        <a href="https://www.youtube.com/user/JockSafariLodge" target="_blank"><img
+                                class="opacity-40 hover:opacity-70" src="image/Home Page/svg/Youtube.svg" alt=""></a>
+                        <a href="https://www.tumblr.com/search/jock%20safari" target="_blank"><img
+                                class="opacity-40 hover:opacity-70" src="image/Home Page/svg/Tumblr.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="flex justify-center">
-                    <ul class="max-w-[149px] text-base font-normal lg:text-start text-center text-[#494948] space-y-3">
-                        <li class="font-Gotham uppercase"><a href="#" class="hover:opacity-60">AccomModation</a>
+                <div class="flex flex-wrap justify-center lg:pb-0 pb-3">
+                    <ul class="max-w-[149px]">
+                        <li
+                            class="mb-22px font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60 uppercase">
+                            <a href="#">AccomModation</a>
                         </li>
-                        <li class="font-Minion opacity-70"><a href="#" class="hover:opacity-60">Main Jock Lodge</a>
+                        <li
+                            class="mb-13px font-Minion tracking-0.03 text-base leading-19px font-normal lg:text-start text-center text-grayshade-0 hover:opacity-100 opacity-70">
+                            <a href="#">Main Jock Lodge</a>
                         </li>
-                        <li class="font-Minion opacity-70"><a href="#" class="hover:opacity-60">Fitzpatrick’s
-                                Lodge</a></li>
+                        <li
+                            class="font-Minion tracking-0.03 text-base leading-19px font-normal lg:text-start text-center text-grayshade-0 hover:opacity-100 opacity-70">
+                            <a href="#">Fitzpatrick’s Lodge</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="flex justify-center">
-                    <ul
-                        class="font-Gotham text-base font-normal lg:text-start text-center text-[#494948] space-y-3 max-w-[149px]">
-                        <li><a href="#" class="hover:opacity-60">EXPERIENCES</a></li>
-                        <li><a href="#" class="hover:opacity-60">CONSERVATION & Community</a></li>
-                        <li><a href="#" class="hover:opacity-60">OUR STORY</a></li>
+                <div class="flex flex-wrap justify-center lg:pb-0 pb-3 uppercase">
+                    <ul class="space-y-22px max-w-[149px]">
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">EXPERIENCES</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">CONSERVATION & Community</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">OUR STORY</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="flex justify-center">
-                    <ul
-                        class="font-Gotham text-base font-normal lg:text-start text-center text-[#494948] space-y-3 max-w-[149px]">
-                        <li><a href="#" class="hover:opacity-60">DESTINATION</a></li>
-                        <li><a href="#" class="hover:opacity-60">OFFERS</a></li>
-                        <li><a href="#" class="hover:opacity-60">RATES</a></li>
-                        <li><a href="#" class="hover:opacity-60">GALLERY</a></li>
+                <div class="flex flex-wrap justify-center lg:pb-0 pb-3 uppercase">
+                    <ul class="space-y-22px max-w-[149px]">
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">DESTINATION</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">OFFERS</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">RATES</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">GALLERY</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="flex justify-center">
-                    <ul
-                        class="font-Gotham text-base font-normal lg:text-start text-center text-[#494948] space-y-3 max-w-[149px]">
-                        <li><a href="#" class="hover:opacity-60">CONTACT</a></li>
-                        <li><a href="#" class="hover:opacity-60">FAQ’S</a></li>
-                        <li><a href="#" class="hover:opacity-60">BLOG</a></li>
+                <div class="flex flex-wrap justify-center lg:pb-0 pb-3 uppercase">
+                    <ul class="space-y-22px max-w-[149px]">
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">CONTACT</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">FAQ’S</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.03 text-base leading-4 font-normal lg:text-start text-center text-grayshade-0 hover:opacity-60">
+                            <a href="#">BLOG</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="pt-3 flex lg:justify-end justify-center">
-                    <a href="#">
-                        <button
-                            class="border py-4 px-8 font-Gotham text-xs font-normal uppercase bg-[#787F3D] text-[#FFFEFE]  hover:bg-[#787F3D60] hover:text-slate-900">Make
-                            A booking
-                        </button>
-                    </a>
+                <div class="FooterButton">
+                    <div class="flex flex-wrap lg:justify-end justify-center sm:pt-0 pt-6">
+                        <a class="border font-Gotham font-normal text-xs leading-3 uppercase text-center text-whiteshade2-0 bg-greenshade-0 border-greenshade-0 hover:bg-greenshade1-0 hover:border-greenshade1-0 py-4 px-8"
+                            href="#">
+                            Make A booking
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="grid md:grid-cols-2 grid-cols-1 pb-3 font-Gotham text-sm font-normal text-[#4D4D4F]">
-                <p class="flex md:justify-start justify-center py-2 opacity-30">© Jock Safari Lodge 2022. All
+            <div class="grid md:grid-cols-2 grid-cols-1 text-grayshade1-0 py-11px">
+                <p
+                    class="flex flex-wrap md:justify-start justify-center md:text-left text-center font-Gotham tracking-0.02 text-3xs font-normal opacity-30">
+                    © Jock Safari Lodge 2022. All
                     rights reserved.</p>
-                <div class="ConditionWithPolicy py-2">
-                    <ul class="flex md:justify-end justify-center">
-                        <li class="opacity-30 hover:opacity-60"><a href="">Terms & Conditions</a></li>
-                        <li class="px-2 opacity-30">|</li>
-                        <li class="opacity-30 hover:opacity-60"><a href="">Privacy policy</a></li>
-                        <li class="px-2 opacity-30">|</li>
-                        <li class="opacity-30 hover:opacity-60"><a href="">Covid-19 Policy</a></li>
-                        <li class="px-2 opacity-30">|</li>
-                        <li class="opacity-30 hover:opacity-60"><a href="">Legal</a></li>
+                <div class="ConditionWithPolicy">
+                    <ul class="flex flex-wrap md:justify-end justify-center">
+                        <li
+                            class="font-Gotham tracking-0.02 text-3xs font-normal opacity-30 hover:opacity-60 after:px-2 after:content-['|'] after:opacity-60 hover:after:opacity-30">
+                            <a href="">Terms & Conditions</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.02 text-3xs font-normal opacity-30 hover:opacity-60 after:px-2 after:content-['|'] after:opacity-60 hover:after:opacity-30">
+                            <a href="">Privacy policy</a>
+                        </li>
+                        <li
+                            class="font-Gotham tracking-0.02 text-3xs font-normal opacity-30 hover:opacity-60 after:px-2 after:content-['|'] after:opacity-60 hover:after:opacity-30">
+                            <a href="">Covid-19 Policy</a>
+                        </li>
+                        <li class="font-Gotham tracking-0.02 text-3xs font-normal opacity-30 hover:opacity-60"><a
+                                href="">Legal</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="FooterWithImgLogos bg-[#494948] flex justify-center py-3">
+        <div class="FooterWithImgLogos bg-grayshade-0 flex flex-wrap justify-center py-3">
             <a href="#"><img src="image/Home Page/svg/Footer - Logos.svg" alt=""></a>
         </div>
     </footer>
@@ -764,9 +826,30 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.js"></script>
 
 <script>
+    // Manu Icon
+    (function () {
+        var toggler_1 = document.querySelector('.toggler_1');
+        var toggler_2 = document.querySelector('.toggler_2');
+        var toggler_3 = document.querySelector('.toggler_3');/* 
+        var manubar = document.querySelector('.manubar');
+        var manux = document.querySelector('.manux'); */
+        icon = document.querySelector('.manuicon');
+
+        function change() {
+            toggler_1.classList.toggle('animation1');
+            toggler_2.classList.toggle('hide');
+            toggler_3.classList.toggle('animation2');/* 
+            manubar.classList.toggle('hidden');
+            manux.classList.toggle('block'); */
+        }
+        icon.addEventListener('click', change);
+    })();
+
     // Swiper Slider First
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1.1,
