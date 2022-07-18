@@ -1,0 +1,102 @@
+/*General styling for structure*/
+body {
+    margin: 0;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.scroll-container {
+    height: 100vh;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.animation-slide-left{
+    display: flex;
+}
+
+.animation-slide-left .imggrid1-img,.animation-slide-left .scroll-caption{
+    width: 50%;
+}
+
+.imggrid1-img{
+    position: relative;
+}
+
+.imggrid1-img img{
+    width: 100%
+}
+
+.imggrid1-img span{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.scroll-container {
+    background-color: #9ab7d3;
+}
+
+.scroll-element {
+    display: block;
+    height: 100%;
+    background-color: #eaeaea;
+}
+
+.scroll-caption {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+
+    .scroll-container,
+    .scroll-container:nth-of-type(even) {
+        flex-direction: column;
+        align-content: inherit;
+    }
+
+    .scroll-element {
+        height: 100%;
+    }
+
+    .scroll-element,
+    .scroll-caption {
+        width: 100%;
+    }
+}
+
+/**Styling scrollable elements*/
+
+
+.scrolled.slide-left {
+    animation: slide-in-left 1.9s ease-in-out both;
+    animation-delay: .2s;
+}
+
+@keyframes slide-in-left {
+    from {
+        position: absolute;
+        left: 0;
+        right: 100%;
+    }
+
+    40% {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    60% {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    to {
+        position: absolute;
+        left: 100%;
+        right: 0;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content-grid="IE=edge">
+    <meta name="viewport" content-grid="width=device-width, initial-scale=1.0">
+    <title>LOAD MORE</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body>
+    <div class="container m-5">
+        <div class="con">
+            <div class="content-grid">Box 1</div>
+            <div class="content-grid">Box 2</div>
+            <div class="content-grid">Box 3</div>
+            <div class="content-grid">Box 4</div>
+            <div class="content-grid">Box 5</div>
+            <div class="content-grid">Box 6</div>
+            <div class="content-grid">Box 7</div>
+            <div class="content-grid">Box 8</div>
+            <div class="content-grid">Box 9</div>
+            <div class="content-grid">Box 10</div>
+            <div class="content-grid">Box 11</div>
+            <div class="content-grid">Box 12</div>
+            <div class="content-grid">Box 13</div>
+            <div class="content-grid">Box 14</div>
+            <div class="content-grid">Box 15</div>
+            <div class="content-grid">Box 16</div>
+        </div>
+
+        <a href="#" id="loadMore">Load More</a>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".content-grid").slice(0, 4).show();
+        $("#loadMore").on("click", function (e) {
+            e.preventDefault();
+            $(".content-grid:hidden").slice(0, 4).slideDown();
+            if ($(".content-grid:hidden").length == 0) {
+                $("#loadMore").text("No content-grid").addClass("nocontent-grid");
+            }
+        });
+
+    })
+</script>
+
+</html>

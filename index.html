@@ -20,21 +20,23 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="output.css">
 
     <title>Jock Safari Lodge Logo</title>
 </head>
 
 <body>
-    <header class="Header w-full absolute top-0 z-10">
+    <header class="header w-full absolute top-0 z-10">
         <div class="my-14 mx-16">
-            <header class="grid xl:grid-cols-4 grid-cols-2">
-                <div class="flex flex-wrap justify-start items-center">
+            <nav class="header-navbar grid xl:grid-cols-4 grid-cols-2">
+                <div class="navbar-brand flex flex-wrap justify-start items-center">
                     <a href="#"><img class="cursor-pointer z-10 hover:opacity-60" src="image/Home Page/svg/Jock.svg"
                             alt=""></a>
                 </div>
                 <div class="xl:col-span-3 flex flex-wrap items-center justify-end gap-8">
-                    <ul class="hidden xl:flex flex-wrap gap-8 text-whiteshade2-0">
+                    <ul class="menu-main-menu-container hidden xl:flex flex-wrap gap-8 text-whiteshade2-0">
                         <li
                             class="font-Gotham tracking-0.03 font-normal text-2xs uppercase cursor-pointer relative after:absolute after:block after:w-0 after:pt-10px after:border-b after:duration-300 hover:after:w-full">
                             <a class="px-2" href="#">Accommodation</a>
@@ -48,13 +50,14 @@
                             <a class="px-2" href="#">Experiences</a>
                         </li>
                     </ul>
-                    <div class="hidden xl:flex flex-wrap items-center">
+                    <div class="navbar-button hidden xl:flex flex-wrap items-center">
                         <a class="border font-Gotham font-normal text-xs leading-3 uppercase text-center text-whiteshade2-0 hover:bg-greenshade-0 hover:border-greenshade-0 py-4 px-8"
                             href="#">
                             Make A booking
                         </a>
                     </div>
-                    <div class="manuicon flex flex-wrap lg:justify-center justify-end lg:px-0 sm:px-15 px-5 items-center">
+                    <div
+                        class="navbar-icon flex flex-wrap lg:justify-center justify-end lg:px-0 sm:px-15 px-5 items-center">
                         <div class="cursor-pointer">
                             <div class="toggler_1"></div>
                             <div class="toggler_2"></div>
@@ -62,11 +65,11 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </nav>
         </div>
     </header>
     <main>
-        <div class="sectionHero relative">
+        <section class="sectionHero relative">
             <img class="w-full h-[904px] object-cover" src="image/Home Page/Tilney Manor exterior and public areas.jpg"
                 alt="">
             <div class="sectionHeroContent">
@@ -93,8 +96,8 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="sectionHeroWithContent xl:px-36 lg:px-16 md:px-11 px-6 xl:py-48 lg:py-36 md:py-24 py-15">
+        </section>
+        <section class="welcome xl:px-36 lg:px-16 md:px-11 px-6 xl:py-48 lg:py-36 md:py-24 py-15">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
                 <div class="flex flex-wrap justify-center md:items-start items-center">
                     <div class="max-w-[631px]">
@@ -143,11 +146,11 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sectionHeroWithImgGrid xl:px-16 lg:px-12 md:px-9 px-6 xl:pb-32 lg:pb-20 md:pb-14 pb-20">
+        </section>
+        <section class="full-banner xl:px-16 lg:px-12 md:px-9 px-6 xl:pb-32 lg:pb-20 md:pb-14 pb-20">
             <div class="grid md:grid-cols-2 grid-cols-1 gap-8">
                 <div class="ImgGrid1">
-                    <img class="w-full pb-11 object-cover" src="image/Home Page/Jock Main Lodge.jpg" alt="">
+                    <img class="w-full mb-11 object-cover" src="image/Home Page/Jock Main Lodge.jpg" alt="">
                     <h1
                         class="font-Minion tracking-0.03 md:text-left text-center font-normal lg:text-4xl lg:leading-47px md:text-3xl text-xl3 text-grayshade-0 pb-3">
                         Jock
@@ -167,7 +170,7 @@
                     </div>
                 </div>
                 <div class="ImgGrid2">
-                    <img class="w-full pb-11 object-cover" src="image/Home Page/Fitzpatrick's Lodge.jpg" alt="">
+                    <img class="w-full mb-11 object-cover" src="image/Home Page/Fitzpatrick's Lodge.jpg" alt="">
                     <h1
                         class="font-Minion tracking-0.03 md:text-left text-center font-normal lg:text-4xl lg:leading-47px md:text-3xl text-xl3 text-grayshade-0 pb-3">
                         Fitzpatrick’s Lodge</h1>
@@ -186,12 +189,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sectionHeroWithSwiperVideo bg-whiteshade-0">
+        </section>
+        <section class="locations-slider sectionHeroWithSwiperVideo bg-whiteshade-0">
             <div class="xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-11 px-6">
                 <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
-                    <div>
+                    <div class="imgGrid relative">
                         <img class="w-full object-cover" src="image/Home Page/Where Two Rivers Meet.jpg" alt="">
+                        <span class="block h-full bg-greenshade-0 scroll-element js-scroll slide-left"></span>
                     </div>
                     <div class="flex flex-wrap justify-center md:py-0 py-3">
                         <div class="max-w-[410px] md:text-left text-center">
@@ -403,85 +407,84 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sectionHeroWithContentWithImg">
-            <div class="xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-pl-11 px-6">
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
-                    <div class="order-2">
-                        <img class="w-full object-cover" src="image/Home Page/Uninterrupted Adventure Awaits.jpg"
-                            alt="">
-                    </div>
-                    <div class="flex flex-wrap justify-center md:py-0 py-3">
-                        <div class="max-w-[410px] md:text-left text-center">
-                            <p class="font-Gotham text-xs leading-3 font-normal text-greenshade-0 mb-10">Experiences</p>
-                            <h1
-                                class="font-Minion tracking-0.03 lg:text-4xl lg:leading-42px md:text-3xl text-xl3 font-normal text-grayshade-0 mb-8">
-                                Uninterrupted Adventure
-                                Awaits</h1>
-                            <p
-                                class="font-Gotham text-sm leading-21px font-light subpixel-antialiased text-grayshade-0 mb-10">
-                                When you come to Jock
-                                Safari
-                                Lodge, you're really coming to see the wild spaces and wildlife surrounding our lodge.
-                                If you're hungry for exploration, for deeply immersing yourself and learning about the
-                                bush's delicate balance and fascinating stories, this is the place for you.
-                                <br />
-                                <br />
-                                Besides offering guests a space to relax and plenty of excitement, Jock Safari Lodge has
-                                a bigger conservation purpose you can learn about. From Big 5 game drives and wilderness
-                                walks to studying local fauna, flora and birdlife, there's much to marvel at that will
-                                move you. It's also perfect for that family holiday, with something for everyone. Little
-                                ones will love our Kids on Safari options, the nearby Leopard Creek invites you for a
-                                day of golf in the bush, and our Pilgrim's Rest Retreat offers an escape to enjoy
-                                pampering in the bush.
-                            </p>
-                            <div class="flex flex-wrap md:justify-start justify-center">
-                                <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
-                                    href="#"><span class="px-2">Explore Our Experiences</span>
-                                </a>
-                            </div>
+        </section>
+        <section class="zigzag zigzag-left-content xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-pl-11 px-6">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
+                <div class="imgGrid order-2 relative">
+                    <img class="w-full object-cover" src="image/Home Page/Uninterrupted Adventure Awaits.jpg" alt="">
+                    <span class="block h-full bg-greenshade-0 scroll-element js-scroll slide-left"></span>
+                </div>
+                <div class="flex flex-wrap justify-center md:py-0 py-3">
+                    <div class="max-w-[410px] md:text-left text-center">
+                        <p class="font-Gotham text-xs leading-3 font-normal text-greenshade-0 mb-10">Experiences</p>
+                        <h1
+                            class="font-Minion tracking-0.03 lg:text-4xl lg:leading-42px md:text-3xl text-xl3 font-normal text-grayshade-0 mb-8">
+                            Uninterrupted Adventure
+                            Awaits</h1>
+                        <p
+                            class="font-Gotham text-sm leading-21px font-light subpixel-antialiased text-grayshade-0 mb-10">
+                            When you come to Jock
+                            Safari
+                            Lodge, you're really coming to see the wild spaces and wildlife surrounding our lodge.
+                            If you're hungry for exploration, for deeply immersing yourself and learning about the
+                            bush's delicate balance and fascinating stories, this is the place for you.
+                            <br />
+                            <br />
+                            Besides offering guests a space to relax and plenty of excitement, Jock Safari Lodge has
+                            a bigger conservation purpose you can learn about. From Big 5 game drives and wilderness
+                            walks to studying local fauna, flora and birdlife, there's much to marvel at that will
+                            move you. It's also perfect for that family holiday, with something for everyone. Little
+                            ones will love our Kids on Safari options, the nearby Leopard Creek invites you for a
+                            day of golf in the bush, and our Pilgrim's Rest Retreat offers an escape to enjoy
+                            pampering in the bush.
+                        </p>
+                        <div class="flex flex-wrap md:justify-start justify-center">
+                            <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                                href="#"><span class="px-2">Explore Our Experiences</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-pl-11 px-6">
-                <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
-                    <div class="md:order-1 order-2">
-                        <img class="w-full object-cover" src="image/Home Page/Safari with Heart.jpg" alt="">
-                    </div>
-                    <div class="flex flex-wrap justify-center md:py-0 py-3 md:order-2 order-1">
-                        <div class="max-w-[410px] md:text-left text-center">
-                            <p class="font-Gotham tracking-0.03 text-xs leading-3 font-normal text-greenshade-0 mb-10">
-                                Conservation & Community
-                            </p>
-                            <h1
-                                class="font-Minion lg:text-4xl tracking-0.03 lg:leading-42px md:text-3xl text-xl3 font-normal text-grayshade-0 mb-8">
-                                Safari with Heart</h1>
-                            <p
-                                class="font-Gotham text-sm leading-21px font-light subpixel-antialiased text-grayshade-0 mb-10">
-                                A safari is so much more
-                                memorable when you know you've treaded lightly and helped preserve it. At Jock Safari
-                                Lodge, we believe in protecting our fascinating wildlife and landscapes by following
-                                only the most stringent eco-management criteria in South Africa. Our lodge was also
-                                built with sustainability in mind, and we continue with this approach in everything we
-                                do.
-                                <br />
-                                <br />
-                                As the Top Environmental Concession within Kruger National Park, our active involvement
-                                in conservation programmes is a testimony to this. As our guest, you can learn more
-                                about what this means and how you can make a difference.
-                            </p>
-                            <div class="flex flex-wrap md:justify-start justify-center">
-                                <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
-                                    href="#"><span class="px-2">Explore Conservation & community</span>
-                                </a>
-                            </div>
+        </section>
+        <section class="zigzag zigzag-right-content xl:py-32 lg:py-20 md:py-14 py-10 md:px-16 sm:px-pl-11 px-6">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-4 items-center">
+                <div class="imgGrid md:order-1 order-2 relative">
+                    <img class="w-full object-cover" src="image/Home Page/Safari with Heart.jpg" alt="">
+                    <span class="block h-full bg-greenshade-0 scroll-element js-scroll slide-left"></span>
+                </div>
+                <div class="flex flex-wrap justify-center md:py-0 py-3 md:order-2 order-1">
+                    <div class="max-w-[410px] md:text-left text-center">
+                        <p class="font-Gotham tracking-0.03 text-xs leading-3 font-normal text-greenshade-0 mb-10">
+                            Conservation & Community
+                        </p>
+                        <h1
+                            class="font-Minion lg:text-4xl tracking-0.03 lg:leading-42px md:text-3xl text-xl3 font-normal text-grayshade-0 mb-8">
+                            Safari with Heart</h1>
+                        <p
+                            class="font-Gotham text-sm leading-21px font-light subpixel-antialiased text-grayshade-0 mb-10">
+                            A safari is so much more
+                            memorable when you know you've treaded lightly and helped preserve it. At Jock Safari
+                            Lodge, we believe in protecting our fascinating wildlife and landscapes by following
+                            only the most stringent eco-management criteria in South Africa. Our lodge was also
+                            built with sustainability in mind, and we continue with this approach in everything we
+                            do.
+                            <br />
+                            <br />
+                            As the Top Environmental Concession within Kruger National Park, our active involvement
+                            in conservation programmes is a testimony to this. As our guest, you can learn more
+                            about what this means and how you can make a difference.
+                        </p>
+                        <div class="flex flex-wrap md:justify-start justify-center">
+                            <a class="font-Gotham font-normal text-xs leading-3 uppercase after:pb-10px text-greenshade-0 relative after:absolute after:block after:w-full after:border-b after:border-greenshade-0 after:duration-300 hover:after:w-0"
+                                href="#"><span class="px-2">Explore Conservation & community</span>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sectionHeroWithSwiperImg">
+        </section>
+        <section class="activities-slider">
             <div class="xl:py-40 lg:py-24 md:py-14 py-10 lg:pl-16 md:pl-13 sm:pl-10 pl-6">
                 <div class="grid lg:grid-cols-8 md:grid-cols-6 grid-cols-1 gap-4">
                     <div
@@ -536,8 +539,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="sectionHeroWithContentGrid md:px-16 sm:px-11 px-6 xl:pb-60 lg:pb-44 md:pb-20 pb-20">
+        </section>
+        <section class="card-box md:px-16 sm:px-11 px-6 xl:pb-60 lg:pb-44 md:pb-20 pb-20">
             <h1 class="font-Minion lg:text-xl4 md:text-4xl text-3xl font-normal text-greenshade-0 text-center mb-2">
                 Uncover our stories from
                 the
@@ -608,10 +611,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="bg-whiteshade1-0">
-        <div class="FooterWithSwiper bg-greenshade-0 xl:pt-40 md:pt-24 py-11 px-6">
+        <section class="testimonials bg-greenshade-0 xl:pt-40 md:pt-24 py-11 px-6">
             <div class="swiper mySwiper_2">
                 <div class="swiper-wrapper mb-20">
                     <div class="swiper-slide">
@@ -671,8 +674,8 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </div>
-        <div class="FooterWithAccordion accordion border-b mb-24" id="accordionExample">
+        </section>
+        <section class="inquiry-section-accordion accordion border-b mb-24" id="accordionExample">
             <div class="accordion-item bg-whiteshade1-0 w-full">
                 <h2 class="accordion-header mb-0 flex flex-wrap active:bg-whiteshade1-0 justify-center w-full"
                     id="headingTwo">
@@ -696,8 +699,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="FooterManu xl:pl-28 lg:pl-12 md:px-9 px-6 sm:pl-10 pl-6 pr-7">
+        </section>
+        <section class="footer xl:pl-28 lg:pl-12 md:px-9 px-6 sm:pl-10 pl-6 pr-7">
             <div class="grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-1 xl:pb-36 lg:pb-32 md:pb-28 pb-24">
                 <div class="FooterLogoWithSocialIcon lg:pb-0 pb-6">
                     <div class="flex flex-wrap lg:justify-start justify-center">
@@ -817,10 +820,10 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="FooterWithImgLogos bg-grayshade-0 flex flex-wrap justify-center py-3">
+        </section>
+        <section class="footer-logos bg-grayshade-0 flex flex-wrap justify-center py-3">
             <a href="#"><img src="image/Home Page/svg/Footer - Logos.svg" alt=""></a>
-        </div>
+        </section>
     </footer>
 </body>
 
@@ -831,6 +834,49 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.js"></script>
 
 <script>
+    const scrollElements = document.querySelectorAll(".js-scroll");
+
+    const elementInView = (el, dividend = 1) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+            elementTop <=
+            (window.innerHeight || document.documentElement.clientHeight) / dividend
+        );
+    };
+
+    const elementOutofView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        return (
+            elementTop > (window.innerHeight || document.documentElement.clientHeight)
+        );
+    };
+
+    const displayScrollElement = (element) => {
+        element.classList.add("scrolled");
+    };
+
+    const hideScrollElement = (element) => {
+        element.classList.remove("scrolled");
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el, 1.25)) {
+                displayScrollElement(el);
+            } else if (elementOutofView(el)) {
+                hideScrollElement(el)
+            }
+        })
+    }
+
+    window.addEventListener("scroll", () => {
+        handleScrollAnimation();
+    });
+</script>
+
+<script>
     // Manu Icon
     (function () {
         var toggler_1 = document.querySelector('.toggler_1');
@@ -838,7 +884,7 @@
         var toggler_3 = document.querySelector('.toggler_3');/* 
         var manubar = document.querySelector('.manubar');
         var manux = document.querySelector('.manux'); */
-        icon = document.querySelector('.manuicon');
+        icon = document.querySelector('.navbar-icon');
 
         function change() {
             toggler_1.classList.toggle('animation1');
