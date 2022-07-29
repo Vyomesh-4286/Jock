@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Gotham: 'Metropolis',
-        Minion: 'Minion Pro',
+        Gotham: 'Gotham',
+        Minion: 'MinionPro-Regular',
       },
       fontSize: {
         '2xs': ['13px', { lineHeight: '13px' }],
@@ -37,6 +37,16 @@ module.exports = {
         '42px': '42px',
         '47px': '47px',
         '60px': '60px',
+        100: '100px',
+      },
+      transitionDelay: {
+        '0.2': '0.2s',
+      },
+      transitionDuration: {
+        '0.3': '0.3s'
+      },
+      width: {
+        45: '45%',
       },
       colors: {
         'greenshade': ['#787F3D'],
@@ -60,6 +70,8 @@ module.exports = {
         per: '15% auto',
         29: '5.0625rem',
         '47px': '47px',
+        100: '100px',
+        200: '200px',
       },
       borderWidth: {
         0.2: '0.2px',

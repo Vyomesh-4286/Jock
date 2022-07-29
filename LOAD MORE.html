@@ -32,21 +32,84 @@
 
         <a href="#" id="loadMore">Load More</a>
     </div>
+    <div>
+        <div class="container fliud mx-5 flex items-center justify-center">
+            <div class="max-w-[90%] space-y-3">
+                <h3 class="font-Gotham text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+                    minus quae animi obcaecati, id
+                    inventore sed facilis corrupti minima, itaque, explicabo quo odio laudantium vel assumenda sapiente
+                    ipsam neque impedit.</h3>
+                <p class="font-Minion text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro est nam
+                    quia numquam nobis, sapiente
+                    iusto sit vel fugiat esse doloremque corrupti, cumque tempora. Cupiditate quidem reprehenderit harum
+                    commodi ab.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores repudiandae ullam officia libero
+                    modi deserunt sit hic obcaecati ipsum accusantium tenetur minus, velit eum veniam. Porro a error
+                    magnam dolores.</p>
+            </div>
+        </div>
+        <div id="editor"></div>
+        <div class="flex items-center justify-center">
+            <button id="cmd" class="border rounded-lg px-5 py-2 bg-slate-600 text-white m-5">Generate PDF</button>
+        </div>
+    </div>
+    <div class="flex items-center justify-center">
+        <div class="navbar-icon cursor-pointer hamburger">
+            <div class="line w-6"></div>
+            <div class="line w-6"></div>
+            <div class="line w-3 ml-auto"></div>
+        </div>
+    </div>
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
 <script>
+    //load more
     $(document).ready(function () {
+        var loadmore = document.querySelector('#loadmore')
         $(".content-grid").slice(0, 4).show();
         $("#loadMore").on("click", function (e) {
             e.preventDefault();
             $(".content-grid:hidden").slice(0, 4).slideDown();
             if ($(".content-grid:hidden").length == 0) {
-                $("#loadMore").text("No content-grid").addClass("nocontent-grid");
+                loadmore.classList('hidden');
             }
         });
 
     })
+
+    //pdf downloade
+    var doc = new jsPDF();
+    var specialElementHandlers = {
+        '#editor': function (element, renderer) {
+            return true;
+        }
+    };
+
+    $('#cmd').click(function () {
+        doc.fromHTML($('.fliud').html(), 15, 15, {
+            'width': 170,
+            'elementHandlers': specialElementHandlers
+        });
+        doc.save('sample-file.pdf');
+    });
+
+    //hamburger
+/*     (function () {
+        var line_1 = document.querySelector('.line:nth-of-type(0)');
+        var line_2 = document.querySelector('.line:nth-of-type(1)');
+        var line_3 = document.querySelector('.line:nth-of-type()');
+        icon = document.querySelector('.navbar-icon');
+
+        function change() {
+            line_1.classList.toggle('animation1');
+            line_2.classList.toggle('hide');
+            line_3.classList.toggle('animation2');
+        }
+        icon.addEventListener('click', change);
+    })(); */
 </script>
 
 </html>
